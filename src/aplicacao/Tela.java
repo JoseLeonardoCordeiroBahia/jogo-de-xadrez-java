@@ -14,6 +14,8 @@ public class Tela {
 				imprimirPeca(pecasDeXadrez[i][j]);
 			}
 			
+			System.out.print((8 - i) + " ");
+			
 			System.out.println();
 		}
 		

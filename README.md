@@ -87,3 +87,26 @@
   - Exceções (Exceptions)
   
   - Construtores (uma string deve ser informada para a exceção)
+  
+##### XadrezException e PosicaoDeXadrez
+
+- Classe xadrez.exception.XadrezException
+
+- Classe xadrez.PosicaoDeXadrez
+
+- Refatorar PartidaDeXadrez.iniciarPartidaDeXadrezColocandoPecasNoTabuleiro()
+
+- Tópicos:
+
+  - Exceções (Exceptions)
+  
+  - Encapsulamento
+  
+  - Construtores (uma string deve ser informada para a exceção)
+  
+  - Substituindo (Overrriding)
+  
+  - Membros estáticos
+  
+  - Padrão de camadas
+  
