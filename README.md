@@ -68,7 +68,7 @@
 
 ###### Lista de controle:
 
-- Método: Tabuleiro.colocarPeca(peça, posição)
+- Método Tabuleiro.colocarPeca(peça, posição)
 
 - Classes: Torre, Rei
 
@@ -86,9 +86,9 @@
 
 ###### Lista de controle:
 
-- Classe tabuleiro.exception.TabuleiroException
+- Classe: tabuleiro.exception.TabuleiroException
 
-- Métodos: Tabuleiro.existePosicao(posição), Tabuleiro.existePecaNaPosicao(posição)
+- Métodos: Tabuleiro.posicaoExiste(posição), Tabuleiro.existePecaNaPosicao(posição)
 
 - Implementar programação defensiva em métodos do tabuleiro
 
@@ -102,9 +102,9 @@
 
 ###### Lista de controle:
 
-- Classe xadrez.exception.XadrezException
+- Classe: xadrez.exception.XadrezException
 
-- Classe xadrez.PosicaoDeXadrez
+- Classe: xadrez.PosicaoDeXadrez
 
 - Refatorar PartidaDeXadrez.iniciarPartidaDeXadrezColocandoPecasNoTabuleiro()
 
@@ -127,6 +127,7 @@
 ###### Cor no terminal:
 
 - Windows: Git Bash
+
 - Mac: Google "osx terminal color"
 
 ###### Lista de controle:
@@ -139,15 +140,15 @@
 
 ###### Lista de controle:
 
-- Método Tabuleiro.retirarPeca()
+- Método: Tabuleiro.retirarPeca()
 
-- Método Tela.lerPosicaoDeXadrez(scanner)
+- Método: Tela.lerPosicaoDeXadrez(scanner)
 
-- Método PartidaDeXadrez.executarMovimento(posição de origem, posição de destino)
+- Método: PartidaDeXadrez.executarMovimento(posição de origem, posição de destino)
 
-  - Método PartidaDeXadrez.fazerMovimento(posição de origem, posição de destino)
+  - Método: PartidaDeXadrez.fazerMovimento(posição de origem, posição de destino)
   
-  - Método PartidaDeXadrez.validarPosicaoDeOrigem(posição de origem)
+  - Método: PartidaDeXadrez.validarPosicaoDeOrigem(posição de origem)
   
 - Escrever a lógica básica no Programa
 
@@ -178,7 +179,7 @@ public static void limparTela() {
 
 ###### Lista de controle:
 
-- Métodos das peças (tabuleiro.Peca) :
+- Métodos das peças (tabuleiro.Peca):
 
   - movimentosPossiveis() [abstract]
   
@@ -193,6 +194,24 @@ public static void limparTela() {
 - Tópicos:
 
   - Método abstrato / classe
+  
+  - Exceções
+  
+##### Implementando possíveis movimentos da Torre
+
+###### Lista de controle:
+
+- Método: PecaDeXadrez.existePecaDoOponente(posição) [protected]
+
+- Implementar Torre.movimentosPossiveis()
+
+- Método: PartidaDeXadrez.validarPosicaoDeDestino(posição de origem, posição de destino)
+
+- Tópicos:
+
+  - Polimorfismo
+  
+  - Modificadores de encapsulamento/acesso [protected]
   
   - Exceções
   
