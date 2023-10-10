@@ -166,10 +166,33 @@ public static void limparTela() {
   System.out.print("\033[H\033[2J");
   System.out.flush();
 }
+```
 
 ###### Lista de controle:
 
 - XadrezException
 
 - InputMismatchException
+
+##### Possíveis movimentos de uma peça
+
+###### Lista de controle:
+
+- Métodos das peças (tabuleiro.Peca) :
+
+  - movimentosPossiveis() [abstract]
+  
+  - movimentoPossivel(posição)
+  
+  - existeAlgumMovimentoPossivel()
+  
+- Implementação básica do movimentosPossiveis() para Torre e Rei
+
+- Atualizar PartidaDeXadrez.validarPosicaoDeOrigem(posição de origem)
+
+- Tópicos:
+
+  - Método abstrato / classe
+  
+  - Exceções
   
