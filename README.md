@@ -2,6 +2,8 @@
 
 ##### Primeira classe: Posição (posição tabuleiro)
 
+###### Lista de controle:
+
 - Classe: Posicao
 
 - Tópicos:
@@ -13,6 +15,8 @@
   - ToString (Object / overrinding)
   
 ##### Começando a implementar Tabuleiro e Peça
+
+###### Lista de controle:
 
 - Classes: Peca, Tabuleiro
 
@@ -29,6 +33,8 @@
 ##### Camada de xadrez e impressão do tabuleiro
 
 ![image](https://github.com/JoseLeonardoCordeiroBahia/assets/blob/main/jogo-de-xadrez-java/tabuleiro-impreso.png)
+
+###### Lista de controle:
 
 - Métodos: Tabuleiro.peca(linha, coluna) e Tabuleiro.peca(posição)
 
@@ -60,6 +66,8 @@
   
 ##### Colocando as peças no tabuleiro
 
+###### Lista de controle:
+
 - Método: Tabuleiro.colocarPeca(peça, posição)
 
 - Classes: Torre, Rei
@@ -76,6 +84,8 @@
   
 ##### TabuleiroException e programação defensiva
 
+###### Lista de controle:
+
 - Classe tabuleiro.exception.TabuleiroException
 
 - Métodos: Tabuleiro.existePosicao(posição), Tabuleiro.existePecaNaPosicao(posição)
@@ -89,6 +99,8 @@
   - Construtores (uma string deve ser informada para a exceção)
   
 ##### XadrezException e PosicaoDeXadrez
+
+###### Lista de controle:
 
 - Classe xadrez.exception.XadrezException
 
@@ -114,13 +126,34 @@
 
 ###### Cor no terminal:
 
-```bash
 - Windows: Git Bash
-
 - Mac: Google "osx terminal color"
-```
+
+###### Lista de controle:
 
 - Colocar mais peças no tabuleiro
 
 - Distinguir as cores das peças no método Tela.imprimirPeca()
+
+##### Movendo as peças
+
+###### Lista de controle:
+
+- Método Tabuleiro.retirarPeca()
+
+- Método Tela.lerPosicaoDeXadrez(scanner)
+
+- Método PartidaDeXadrez.executarMovimento(posição de origem, posição de destino)
+
+  - Método PartidaDeXadrez.fazerMovimento(posição de origem, posição de destino)
+  
+  - Método PartidaDeXadrez.validarPosicaoDeOrigem(posição de origem)
+  
+- Escrever a lógica básica no Programa
+
+- Tópicos:
+
+  - Exceções
+  
+  - Encapsulamento
   

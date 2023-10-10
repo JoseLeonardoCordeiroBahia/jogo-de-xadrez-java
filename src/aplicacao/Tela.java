@@ -1,6 +1,10 @@
 package aplicacao;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 import xadrez.PecaDeXadrez;
+import xadrez.PosicaoDeXadrez;
 import xadrez.enums.Cor;
 
 public class Tela {
@@ -24,6 +28,20 @@ public class Tela {
 	public static final String ANSI_PURPLE_BACKGROUND = "\u001B[45m";
 	public static final String ANSI_CYAN_BACKGROUND = "\u001B[46m";
 	public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
+	
+	public static PosicaoDeXadrez lerPosicaoDeXadrez(Scanner scanner) {
+		try {
+			String posicao = scanner.nextLine();
+			char coluna = posicao.charAt(0);
+			int linha = Integer.parseInt(posicao.substring(1));
+			
+			return new PosicaoDeXadrez(coluna, linha);
+		} catch (RuntimeException e) {
+			throw new InputMismatchException("Erro ao lear a posição de xadrez. "
+					+ "Os valores válidos são de a1 até h8");
+		}
+
+	}
 
 	public static void imprimirTabuleiro(PecaDeXadrez[][] pecasDeXadrez) {
 		System.out.println("  a b c d e f g h");
