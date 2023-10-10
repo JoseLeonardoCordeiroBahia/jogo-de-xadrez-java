@@ -11,3 +11,17 @@
   - Construtores
 
   - ToString (Object / overrinding)
+  
+##### Começando a implementar Tabuleiro e Peça
+
+- Classes: Peca, Tabuleiro
+
+- Tópicos:
+  
+  - Associações
+  
+  - Modificadores de encapsulamento e acessos
+  
+  - Estrutura de dados - tópicos:
+    
+    - Matriz.
