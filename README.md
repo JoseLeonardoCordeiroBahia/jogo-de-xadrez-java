@@ -157,3 +157,19 @@
   
   - Encapsulamento
   
+##### Manipulando exceções e limpando a tela
+  
+###### Limpar tela usando Java:
+```bash
+// https://stackoverflow.com/questions/2979383/java-clear-the-console
+public static void limparTela() {
+  System.out.print("\033[H\033[2J");
+  System.out.flush();
+}
+
+###### Lista de controle:
+
+- XadrezException
+
+- InputMismatchException
+  
