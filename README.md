@@ -110,3 +110,17 @@
   
   - Padrão de camadas
   
+##### Melhoria na impressão do tabuleiro
+
+###### Cor no terminal:
+
+```bash
+- Windows: Git Bash
+
+- Mac: Google "osx terminal color"
+```
+
+- Colocar mais peças no tabuleiro
+
+- Distinguir as cores das peças no método Tela.imprimirPeca()
+  
