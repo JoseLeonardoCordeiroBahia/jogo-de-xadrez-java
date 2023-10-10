@@ -32,7 +32,7 @@
 
 - Métodos: Tabuleiro.peca(linha, coluna) e Tabuleiro.peca(posição)
 
-- Enum xadrez.enums.Cor
+- Enum: xadrez.enums.Cor
 
 - Classe: xadrez.PecaDeXadrez
 
@@ -57,3 +57,18 @@
 - Estruturas de dados - tópicos:
 
   - Matriz.
+  
+##### Colocando as peças no tabuleiro
+
+- Método: Tabuleiro.colocarPeca(peça, posição)
+
+- Classes: Torre, Rei
+
+- Método: PartidaDeXadrez.iniciarPartidaDeXadrezColocandoPecasNoTabuleiro()
+
+- Tópicos:
+  - Herança
+  
+  - Substituindo (Overrriding)
+  
+  - Poliformismo (ToString
