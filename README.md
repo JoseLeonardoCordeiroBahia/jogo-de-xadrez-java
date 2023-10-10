@@ -67,8 +67,23 @@
 - Método: PartidaDeXadrez.iniciarPartidaDeXadrezColocandoPecasNoTabuleiro()
 
 - Tópicos:
+
   - Herança
   
   - Substituindo (Overrriding)
   
   - Poliformismo (ToString
+  
+##### TabuleiroException e programação defensiva
+
+- Classe tabuleiro.exception.TabuleiroException
+
+- Métodos: Tabuleiro.existePosicao(posição), Tabuleiro.existePecaNaPosicao(posição)
+
+- Implementar programação defensiva em métodos do tabuleiro
+
+- Tópicos:
+
+  - Exceções (Exceptions)
+  
+  - Construtores (uma string deve ser informada para a exceção)
