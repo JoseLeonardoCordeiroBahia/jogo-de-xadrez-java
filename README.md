@@ -144,7 +144,7 @@
 
 - Método: Tela.lerPosicaoDeXadrez(scanner)
 
-- Método: PartidaDeXadrez.executarMovimento(posição de origem, posição de destino)
+- Método: PartidaDeXadrez.executarMovimento(posição de origem, posição de destino) [PosicaoDeXadrez]
 
   - Método: PartidaDeXadrez.fazerMovimento(posição de origem, posição de destino)
   
@@ -242,3 +242,25 @@ public static void limparTela() {
   - Encapsulamento
   
   - Polimorfismo
+  
+##### Trocar de jogador a cada turno
+
+###### Lista de controle:
+
+- Classe PartidaDeXadrez:
+
+  - Propriedades: turno, jogadorAtual [private get]
+
+  - Método: trocarDeJogador() [private]
+
+  - Atualizar executarMovimento(posição de origem, posição de destino) [PosicaoDeXadrez]
+
+  - Atualizar validarPosicaoDeOrigem(posição de origem)
+
+- Método: Tela.imprimirPartida(partida de xadrez)
+
+- Tópicos:
+
+  - Encapsulamento
+  
+  - Exceções

@@ -3,6 +3,7 @@ package aplicacao;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import xadrez.PartidaDeXadrez;
 import xadrez.PecaDeXadrez;
 import xadrez.PosicaoDeXadrez;
 import xadrez.enums.Cor;
@@ -47,6 +48,16 @@ public class Tela {
 					"Erro ao lear a posição de xadrez. " + "Os valores válidos são de a1 até h8");
 		}
 
+	}
+	
+	public static void imprimirPartida(PartidaDeXadrez partidaDeXadrez) {
+		imprimirTabuleiro(partidaDeXadrez.getPecasDeXadrezDaPartida());
+		
+		System.out.println("");
+		
+		System.out.println("Turno : " + partidaDeXadrez.getTurno());
+		
+		System.out.println("Aguardando jogador: da peça " + partidaDeXadrez.getJogadorAtual());
 	}
 
 	public static void imprimirTabuleiro(PecaDeXadrez[][] pecasDeXadrez) {
