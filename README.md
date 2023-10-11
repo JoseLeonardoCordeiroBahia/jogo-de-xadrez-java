@@ -28,7 +28,7 @@
   
   - Estrutura de dados - tópicos:
     
-    - Matriz.
+    - Matriz
     
 ##### Camada de xadrez e impressão do tabuleiro
 
@@ -62,7 +62,7 @@
   
 - Estruturas de dados - tópicos:
 
-  - Matriz.
+  - Matriz
   
 ##### Colocando as peças no tabuleiro
 
@@ -88,7 +88,7 @@
 
 - Classe: TabuleiroException
 
-- Métodos: Tabuleiro.posicaoExiste(posição), Tabuleiro.existePecaNaPosicao(posição)
+- Métodos: Tabuleiro.posicaoExiste(), Tabuleiro.existePecaNaPosicao()
 
 - Implementar programação defensiva em métodos do tabuleiro
 
@@ -142,13 +142,13 @@
 
 - Método: Tabuleiro.retirarPeca()
 
-- Método: Tela.lerPosicaoDeXadrez(scanner)
+- Método: Tela.lerPosicaoDeXadrez()
 
-- Método: PartidaDeXadrez.executarMovimento(posição de origem, posição de destino) [PosicaoDeXadrez]
+- Método: PartidaDeXadrez.executarMovimento()
 
-  - Método: PartidaDeXadrez.fazerMovimento(posição de origem, posição de destino)
+  - Método: PartidaDeXadrez.fazerMovimento()
   
-  - Método: PartidaDeXadrez.validarPosicaoDeOrigem(posição de origem)
+  - Método: PartidaDeXadrez.validarPosicaoDeOrigem()
   
 - Escrever a lógica básica no Programa
 
@@ -183,13 +183,13 @@ public static void limparTela() {
 
   - movimentosPossiveis() [abstract]
   
-  - movimentoPossivel(posição)
+  - movimentoPossivel()
   
   - existeAlgumMovimentoPossivel()
   
 - Implementação básica do movimentosPossiveis() para Torre e Rei
 
-- Atualizar PartidaDeXadrez.validarPosicaoDeOrigem(posição de origem)
+- Atualizar PartidaDeXadrez.validarPosicaoDeOrigem()
 
 - Tópicos:
 
@@ -205,7 +205,7 @@ public static void limparTela() {
 
 - Implementar Torre.movimentosPossiveis()
 
-- Método: PartidaDeXadrez.validarPosicaoDeDestino(posição de origem, posição de destino)
+- Método: PartidaDeXadrez.validarPosicaoDeDestino()
 
 - Tópicos:
 
@@ -219,9 +219,9 @@ public static void limparTela() {
 
 ###### Lista de controle:
 
-- Método: PartidaDeXadrez.movimentosPossiveis(posição de origem) [PosicaoDeXadrez]
+- Método: PartidaDeXadrez.movimentosPossiveis()
 
-- Método: Tela.imprimirTabuleiro(peças de xadres, movimentosPossiveis) [overload]
+- Método: Tela.imprimirTabuleiro() [overload]
 
 - Refatorar a lógica do programa principal
 
@@ -253,14 +253,40 @@ public static void limparTela() {
 
   - Método: trocarDeJogador() [private]
 
-  - Atualizar executarMovimento(posição de origem, posição de destino) [PosicaoDeXadrez]
+  - Atualizar executarMovimento()
 
-  - Atualizar validarPosicaoDeOrigem(posição de origem)
+  - Atualizar validarPosicaoDeOrigem()
 
-- Método: Tela.imprimirPartida(partida de xadrez)
+- Método: Tela.imprimirPartida()
 
 - Tópicos:
 
   - Encapsulamento
   
   - Exceções
+
+##### Manipulando peças capturadas
+
+###### Lista de controle:
+
+- Método: Tela.imprimirPecasCapturadas(peças capturadas) [List<PecaDeXadrez>]
+
+- Atualizar e Tela.imprimirPartida()
+
+- Atualizar a lógica da classe Programa
+
+- Listas na PartidaDeXadrez: pecasNoTabuleiro, pecasCapturadas
+  
+  - Atualizar colocarNovaPeca()
+  
+  - Atualizar fazerMovimento()
+  
+- Tópicos:
+
+  - Encapsulamento
+  
+  - Construtores
+  
+ - Estrutura de dados - tópicos:
+ 
+  - Lista
