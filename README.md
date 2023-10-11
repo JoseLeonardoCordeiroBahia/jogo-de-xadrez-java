@@ -38,13 +38,13 @@
 
 - Métodos: Tabuleiro.peca(linha, coluna) e Tabuleiro.peca(posição)
 
-- Enum: xadrez.enums.Cor
+- Enum: Cor
 
-- Classe: xadrez.PecaDeXadrez
+- Classe: PecaDeXadrez
 
-- Classe: xadrez.PartidaDeXadrez
+- Classe: PartidaDeXadrez
 
-- Classe: aplicacao.Tela
+- Classe: Tela
 
 - Tópicios:
 
@@ -86,7 +86,7 @@
 
 ###### Lista de controle:
 
-- Classe: tabuleiro.exception.TabuleiroException
+- Classe: TabuleiroException
 
 - Métodos: Tabuleiro.posicaoExiste(posição), Tabuleiro.existePecaNaPosicao(posição)
 
@@ -102,9 +102,9 @@
 
 ###### Lista de controle:
 
-- Classe: xadrez.exception.XadrezException
+- Classe: XadrezException
 
-- Classe: xadrez.PosicaoDeXadrez
+- Classe: PosicaoDeXadrez
 
 - Refatorar PartidaDeXadrez.iniciarPartidaDeXadrezColocandoPecasNoTabuleiro()
 
@@ -228,3 +228,17 @@ public static void limparTela() {
 - Tópico:
 
   - Sobrecarga (Overloading)
+  
+##### Implementando possíveis movimentos de Rei
+
+###### Lista de controle:
+
+- Método: Rei.podeMover(posição) [private]
+
+- Implementar Rei.movimentosPossiveis()
+
+- Tópicos:
+  
+  - Encapsulamento
+  
+  - Polimorfismo
