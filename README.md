@@ -325,12 +325,34 @@ public static void limparTela() {
 
 - Classe PartidaDeXadrez:
 
-  - Propriedade  xequeMate [private is]
+  - Propriedade xequeMate [private is]
   
-  - Método testarXequeMate() [private]
+  - Método: testarXequeMate() [private]
   
   - Atualizar executarMovimento()
   
 - Atualizar Tela.imprimirPartida()
 
 - Atualizar a lógica da classe Programa
+
+##### Quantidade de movimentos das peças
+
+###### Lista de controle:
+
+- Classe PecaDeXadrez:
+
+  - Propriedade quantidadeDeMovimentos [private get]
+  
+  - Método: incrementarQuantidadeDeMovimentos()
+  
+  - Método: decrementarQuantidadeDeMovimentos()
+  
+- Classe PartidaDeXadrez:
+
+  - Atualizar fazerMovimento()
+  
+  - Atualizar desfazerMovimento()
+  
+- POO tópicos:
+
+  - Encapsulamento
