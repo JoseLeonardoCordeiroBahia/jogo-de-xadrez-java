@@ -307,7 +307,7 @@ public static void limparTela() {
 
   - Método: desfazerMovimento()
   
-  - Propriedade xeque
+  - Propriedade xeque [private is]
   
   - Método: oponente() [private]
   
@@ -318,3 +318,19 @@ public static void limparTela() {
   - Atualizar executarMovimento()
 
 - Atualizar Tela.imprimirPartida()
+
+##### Lógica do xeque-mate
+
+###### Lista de controle:
+
+- Classe PartidaDeXadrez:
+
+  - Propriedade  xequeMate [private is]
+  
+  - Método testarXequeMate() [private]
+  
+  - Atualizar executarMovimento()
+  
+- Atualizar Tela.imprimirPartida()
+
+- Atualizar a lógica da classe Programa

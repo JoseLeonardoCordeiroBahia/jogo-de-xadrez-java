@@ -18,7 +18,7 @@ public class Programa {
 		PartidaDeXadrez partidaDeXadrez = new PartidaDeXadrez();
 		List<PecaDeXadrez> pecasCapturadas = new ArrayList<>();
 
-		while (true) {
+		while (!partidaDeXadrez.isXequeMate()) {
 			try {
 				Tela.limparTela();
 				Tela.imprimirPartida(partidaDeXadrez, pecasCapturadas);
@@ -51,6 +51,9 @@ public class Programa {
 				scanner.nextLine();
 			}
 		}
+		
+		Tela.limparTela();
+		Tela.imprimirPartida(partidaDeXadrez, pecasCapturadas);
 	}
 
 }
