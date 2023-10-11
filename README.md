@@ -287,6 +287,34 @@ public static void limparTela() {
   
   - Construtores
   
- - Estrutura de dados - tópicos:
- 
+- Estrutura de dados - tópicos:
+    
   - Lista
+
+##### Lógica de xeque
+
+###### Regras
+
+- Xeque significa que seu rei está sob ameaça de pelo menos uma peça do oponente
+
+- Você não pode se colocar em cheque
+
+###### Lista de controle:
+
+- Propriedade PosicaoDeXadrez.getPosicaoDeXadrez()
+
+- Classe PartidaDeXadrez:
+
+  - Método: desfazerMovimento()
+  
+  - Propriedade xeque
+  
+  - Método: oponente() [private]
+  
+  - Método: rei(color) [private]
+  
+  - Método testarXeque()
+  
+  - Atualizar executarMovimento()
+
+- Atualizar Tela.imprimirPartida()

@@ -63,9 +63,13 @@ public class Tela {
 		
 		System.out.println();
 		
-		System.out.println("Turno : " + partidaDeXadrez.getTurno());
+		System.out.println("Turno: " + partidaDeXadrez.getTurno());
 		
-		System.out.println("Aguardando jogador: da peça " + partidaDeXadrez.getJogadorAtual().getDescricao());
+		System.out.println("Aguardando jogador da peça " + partidaDeXadrez.getJogadorAtual().getDescricao());
+	
+		if (partidaDeXadrez.isXeque()) {
+			System.out.println(ANSI_RED + "Você está em XEQUE!" + ANSI_RESET);
+		}
 	}
 
 	public static void imprimirTabuleiro(PecaDeXadrez[][] pecasDeXadrez) {
