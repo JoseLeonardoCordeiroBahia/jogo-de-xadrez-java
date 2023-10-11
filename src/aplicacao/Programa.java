@@ -24,6 +24,11 @@ public class Programa {
 
 				System.out.print("Posição de origem: ");
 				PosicaoDeXadrez posicaoDeOrigem = Tela.lerPosicaoDeXadrez(scanner);
+				
+				boolean[][] movimentosPossiveis = partidaDeXadrez.movimentosPossiveis(posicaoDeOrigem);
+				
+				Tela.limparTela();
+				Tela.imprimirTabuleiro(partidaDeXadrez.getPecasDeXadrezDaPartida(), movimentosPossiveis);
 
 				System.out.println();
 

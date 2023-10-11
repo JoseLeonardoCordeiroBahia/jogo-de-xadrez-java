@@ -215,3 +215,16 @@ public static void limparTela() {
   
   - Exceções
   
+##### Imprimindo movimentos possíveis
+
+###### Lista de controle:
+
+- Método: PartidaDeXadrez.movimentosPossiveis(posição de origem) [PosicaoDeXadrez]
+
+- Método: Tela.imprimirTabuleiro(peças de xadres, movimentosPossiveis) [overload]
+
+- Refatorar a lógica do programa principal
+
+- Tópico:
+
+  - Sobrecarga (Overloading)

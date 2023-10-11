@@ -56,7 +56,25 @@ public class Tela {
 			System.out.print((8 - i) + " ");
 
 			for (int j = 0; j < pecasDeXadrez.length; j++) {
-				imprimirPeca(pecasDeXadrez[i][j]);
+				imprimirPeca(pecasDeXadrez[i][j], false);
+			}
+
+			System.out.print((8 - i) + " ");
+
+			System.out.println();
+		}
+
+		System.out.println("  a b c d e f g h");
+	}
+	
+	public static void imprimirTabuleiro(PecaDeXadrez[][] pecasDeXadrez, boolean[][] movimentosPossiveis) {
+		System.out.println("  a b c d e f g h");
+
+		for (int i = 0; i < pecasDeXadrez.length; i++) {
+			System.out.print((8 - i) + " ");
+
+			for (int j = 0; j < pecasDeXadrez.length; j++) {
+				imprimirPeca(pecasDeXadrez[i][j], movimentosPossiveis[i][j]);
 			}
 
 			System.out.print((8 - i) + " ");
@@ -67,9 +85,13 @@ public class Tela {
 		System.out.println("  a b c d e f g h");
 	}
 
-	private static void imprimirPeca(PecaDeXadrez pecaDeXadrez) {
+	private static void imprimirPeca(PecaDeXadrez pecaDeXadrez, boolean colorirFundo) {
+		if (colorirFundo) {
+			System.out.print(ANSI_BLUE_BACKGROUND);
+		}
+		
 		if (pecaDeXadrez == null) {
-			System.out.print("-");
+			System.out.print("-" + ANSI_RESET);
 		} else {
 			if (pecaDeXadrez.getCor() == Cor.BRANCA) {
 				System.out.print(ANSI_WHITE + pecaDeXadrez + ANSI_RESET);
