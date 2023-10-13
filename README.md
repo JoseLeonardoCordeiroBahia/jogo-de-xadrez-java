@@ -404,3 +404,19 @@ public static void limparTela() {
   - Herança
   
   - Polimorfismo
+
+##### Criando a peça da Rainha
+
+###### Lista de controle:
+
+- Classe Rainha
+
+- Atualizar PartidaDeXadrez.iniciarPartidaDeXadrezColocandoPecasNoTabuleiro()
+
+- Tópicos:
+
+  - Encapsulamento
+  
+  - Herança
+  
+  - Polimorfismo
