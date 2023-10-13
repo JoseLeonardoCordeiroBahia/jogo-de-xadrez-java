@@ -1,6 +1,5 @@
 package aplicacao;
 
-import java.awt.Color;
 import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -53,21 +52,21 @@ public class Tela {
 		}
 
 	}
-	
+
 	public static void imprimirPartida(PartidaDeXadrez partidaDeXadrez, List<PecaDeXadrez> pecasCapturadas) {
 		imprimirTabuleiro(partidaDeXadrez.getPecasDeXadrezDaPartida());
-		
+
 		System.out.println("");
-		
+
 		imprimirPecasCapturadas(pecasCapturadas);
-		
+
 		System.out.println();
-		
+
 		System.out.println("Turno: " + partidaDeXadrez.getTurno());
-		
+
 		if (!partidaDeXadrez.isXequeMate()) {
 			System.out.println("Aguardando jogador da peça " + partidaDeXadrez.getJogadorAtual().getDescricao());
-			
+
 			if (partidaDeXadrez.isXeque()) {
 				System.out.println(ANSI_RED + "Você está em XEQUE!" + ANSI_RESET);
 			}
@@ -95,7 +94,7 @@ public class Tela {
 
 		System.out.println("  a b c d e f g h");
 	}
-	
+
 	public static void imprimirTabuleiro(PecaDeXadrez[][] pecasDeXadrez, boolean[][] movimentosPossiveis) {
 		System.out.println("  a b c d e f g h");
 
@@ -107,7 +106,7 @@ public class Tela {
 			}
 
 			System.out.print((8 - i) + " ");
-			
+
 			System.out.println();
 		}
 
@@ -118,7 +117,7 @@ public class Tela {
 		if (colorirFundo) {
 			System.out.print(ANSI_BLUE_BACKGROUND);
 		}
-		
+
 		if (pecaDeXadrez == null) {
 			System.out.print("-" + ANSI_RESET);
 		} else {
@@ -130,26 +129,24 @@ public class Tela {
 		}
 		System.out.print(" ");
 	}
-	
+
 	private static void imprimirPecasCapturadas(List<PecaDeXadrez> pecasCapturadas) {
 		List<PecaDeXadrez> pecasBranca = pecasCapturadas.stream()
-				.filter(pecaCapturada -> pecaCapturada.getCor() == Cor.BRANCA)
-				.collect(Collectors.toList());
-		
+				.filter(pecaCapturada -> pecaCapturada.getCor() == Cor.BRANCA).collect(Collectors.toList());
+
 		List<PecaDeXadrez> pecasPreta = pecasCapturadas.stream()
-				.filter(pecaCapturada -> pecaCapturada.getCor() == Cor.PRETA)
-				.collect(Collectors.toList());
-		
+				.filter(pecaCapturada -> pecaCapturada.getCor() == Cor.PRETA).collect(Collectors.toList());
+
 		System.out.println("Peças capturadas:");
 		System.out.print("Branca: ");
 		System.out.print(ANSI_WHITE);
 		System.out.println(Arrays.toString(pecasBranca.toArray()));
 		System.out.print(ANSI_RESET);
-		
+
 		System.out.print("Preta: ");
 		System.out.print(ANSI_YELLOW);
 		System.out.println(Arrays.toString(pecasPreta.toArray()));
 		System.out.print(ANSI_RESET);
 	}
-	
+
 }

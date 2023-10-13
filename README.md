@@ -430,3 +430,21 @@ public static void limparTela() {
 - Atualizar PartidaDeXadrez.fazerMovimento()
 
 - Atualizar PartidaDeXadrez.desfazerMovimento()
+
+##### Jogada especial en passant
+
+###### Lista de controle:
+
+- Registre um peão que pode ser capturado por en passant no próximo turno
+
+  - Propriedade PartidaDeXadrez.vulneravelAoEnPassant
+  
+  - Atualizar PartidaDeXadrez.executarMovimento()
+  
+- Atualizar Peao.movimentosPossiveis()
+
+- Atualizar PartidaDeXadrez.fazerMovimento()
+
+- Atualiar PartidaDeXadrez.desfazerMovimento()
+
+- Atualizar PartidaDeXadrez.iniciarPartidaDeXadrezColocandoPecasNoTabuleiro()
