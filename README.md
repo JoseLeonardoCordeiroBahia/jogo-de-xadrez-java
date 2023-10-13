@@ -422,6 +422,7 @@ public static void limparTela() {
   - Polimorfismo
  
 ##### Jogada especial roque
+![image](https://github.com/JoseLeonardoCordeiroBahia/jogo-de-xadrez-java/assets/63564226/76fef9ea-58d4-4e4b-b770-2e7abdad157a)
 
 ###### Lista de controle:
 
@@ -432,6 +433,7 @@ public static void limparTela() {
 - Atualizar PartidaDeXadrez.desfazerMovimento()
 
 ##### Jogada especial en passant
+![image](https://github.com/JoseLeonardoCordeiroBahia/jogo-de-xadrez-java/assets/63564226/2033fa8e-ed4f-4b10-8dca-083d4a93215a)
 
 ###### Lista de controle:
 
@@ -450,6 +452,7 @@ public static void limparTela() {
 - Atualizar PartidaDeXadrez.iniciarPartidaDeXadrezColocandoPecasNoTabuleiro()
 
 ##### Jogada especial promoção
+![image](https://github.com/JoseLeonardoCordeiroBahia/jogo-de-xadrez-java/assets/63564226/9b351e4b-d884-4632-8aad-4cb1efceea71)
 
 ###### Lista de controle:
 
