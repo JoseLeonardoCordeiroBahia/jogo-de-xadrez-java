@@ -372,3 +372,18 @@ public static void limparTela() {
   - Herança
   
   - Polimorfismo
+  
+##### Criando a peça do Bispo
+
+###### Lista de controle:
+
+- Classe Bispo
+
+- Atualizar PartidaDeXadrez.iniciarPartidaDeXadrezColocandoPecasNoTabuleiro()
+
+- Tópicos:
+  - Encapsulamento
+  
+  - Herança
+  
+  - Polimorfismo
