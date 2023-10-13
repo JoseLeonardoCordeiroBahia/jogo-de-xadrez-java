@@ -382,6 +382,23 @@ public static void limparTela() {
 - Atualizar PartidaDeXadrez.iniciarPartidaDeXadrezColocandoPecasNoTabuleiro()
 
 - Tópicos:
+
+  - Encapsulamento
+  
+  - Herança
+  
+  - Polimorfismo
+  
+##### Criando a peça do Cavalo
+
+###### Lista de controle:
+
+- Classe Cavalo
+
+- Atualizar PartidaDeXadrez.iniciarPartidaDeXadrezColocandoPecasNoTabuleiro()
+
+- Tópicos:
+
   - Encapsulamento
   
   - Herança
