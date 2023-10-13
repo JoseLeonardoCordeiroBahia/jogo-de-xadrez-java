@@ -311,7 +311,7 @@ public static void limparTela() {
   
   - Método: oponente() [private]
   
-  - Método: rei(color) [private]
+  - Método: rei(cor) [private]
   
   - Método testarXeque()
   
@@ -353,6 +353,22 @@ public static void limparTela() {
   
   - Atualizar desfazerMovimento()
   
-- POO tópicos:
+- Tópicos:
 
   - Encapsulamento
+  
+##### Criando a peça do Peão
+
+###### Lista de controle:
+
+- Classe Peao
+
+- Atualizar PartidaDeXadrez.iniciarPartidaDeXadrezColocandoPecasNoTabuleiro()
+
+- Tópicos:
+
+  - Encapsulamento
+  
+  - Herança
+  
+  - Polimorfismo
