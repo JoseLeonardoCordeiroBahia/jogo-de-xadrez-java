@@ -448,3 +448,15 @@ public static void limparTela() {
 - Atualiar PartidaDeXadrez.desfazerMovimento()
 
 - Atualizar PartidaDeXadrez.iniciarPartidaDeXadrezColocandoPecasNoTabuleiro()
+
+##### Jogada especial promoção
+
+###### Lista de controle:
+
+- Propriedade PartidaDeXadrez.promocao
+
+- Atualizar PartidaDeXadrez.executarMovimento()
+
+- Método: PartidaDeXadrez.trocarPecaPromovida()
+
+- Atualizar a lógica da classe Programa

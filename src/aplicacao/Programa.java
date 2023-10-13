@@ -43,6 +43,14 @@ public class Programa {
 				if (pecaCapturada != null) {
 					pecasCapturadas.add(pecaCapturada);
 				}
+				
+				if (partidaDeXadrez.getPromocao() != null) {
+					System.out.print("Insira a peça para pomoção (T/C/B/R): ");
+					String tipo = scanner.nextLine();
+					
+					partidaDeXadrez.trocarPecaPromovida(tipo);
+				}
+				
 			} catch (XadrezException e) {
 				System.out.println(e.getMessage());
 				scanner.nextLine();
