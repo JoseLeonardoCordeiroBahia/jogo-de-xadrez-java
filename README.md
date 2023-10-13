@@ -445,7 +445,7 @@ public static void limparTela() {
 
 - Atualizar PartidaDeXadrez.fazerMovimento()
 
-- Atualiar PartidaDeXadrez.desfazerMovimento()
+- Atualizar PartidaDeXadrez.desfazerMovimento()
 
 - Atualizar PartidaDeXadrez.iniciarPartidaDeXadrezColocandoPecasNoTabuleiro()
 
