@@ -45,8 +45,13 @@ public class Programa {
 				}
 				
 				if (partidaDeXadrez.getPromocao() != null) {
-					System.out.print("Insira a peça para pomoção (T/C/B/R): ");
-					String tipo = scanner.nextLine();
+					System.out.print("Insira a peça para pomoção (T/C/B/D): ");
+					String tipo = scanner.nextLine().toUpperCase();
+					
+					while (!tipo.equals("T") && !tipo.equals("C") && !tipo.equals("B") && !tipo.equals("D")) {
+						System.out.print("Valor inválido! Insira novamente a peça para pomoção (T/C/B/D): ");
+						tipo = scanner.nextLine().toUpperCase();
+					}
 					
 					partidaDeXadrez.trocarPecaPromovida(tipo);
 				}

@@ -1,6 +1,5 @@
 package xadrez;
 
-import java.security.InvalidParameterException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -13,7 +12,7 @@ import xadrez.exception.XadrezException;
 import xadrez.pecas.Bispo;
 import xadrez.pecas.Cavalo;
 import xadrez.pecas.Peao;
-import xadrez.pecas.Rainha;
+import xadrez.pecas.Dama;
 import xadrez.pecas.Rei;
 import xadrez.pecas.Torre;
 
@@ -59,6 +58,10 @@ public class PartidaDeXadrez {
 	
 	public PecaDeXadrez getPromocao() {
 		return promocao;
+	}
+	
+	public List<Peca> getPecasNoTabuleiro() {
+		return pecasNoTabuleiro;
 	}
 
 	public PecaDeXadrez[][] getPecasDeXadrezDaPartida() {
@@ -106,7 +109,7 @@ public class PartidaDeXadrez {
 			if ((pecaMovida.getCor() == Cor.BRANCA && destino.getLinha() == 0)
 					|| (pecaMovida.getCor() == Cor.PRETA && destino.getLinha() == 7)) {
 				promocao = (PecaDeXadrez) tabuleiro.peca(destino);
-				promocao = trocarPecaPromovida("R");
+				promocao = trocarPecaPromovida("D");
 			}
 		}
 
@@ -134,19 +137,16 @@ public class PartidaDeXadrez {
 			throw new IllegalStateException("Não há peça para ser promovida");
 		}
 		
-		if (!tipo.equals("T") && !tipo.equals("C") && !tipo.equals("B") && !tipo.equals("R")) {
-			throw new InvalidParameterException("Tipo inválido para promoção da peça");
+		if (!tipo.equals("T") && !tipo.equals("C") && !tipo.equals("B") && !tipo.equals("D")) {
+			return promocao;
 		}
 		
 		Posicao posicaoDaPecaPromovida = promocao.getPosicaoDeXadrez().paraPosicao();
 		Peca peca = tabuleiro.retirarPeca(posicaoDaPecaPromovida);
-		
 		pecasNoTabuleiro.remove(peca);
 		
 		PecaDeXadrez novaPeca = novaPeca(tipo, promocao.getCor());
-		
 		tabuleiro.colocarPeca(novaPeca, posicaoDaPecaPromovida);
-		
 		pecasNoTabuleiro.add(novaPeca);
 		
 		return novaPeca;
@@ -165,7 +165,7 @@ public class PartidaDeXadrez {
 			return new Bispo(tabuleiro, cor);
 		}
 		
-		return new Rainha(tabuleiro, cor);
+		return new Dama(tabuleiro, cor);
 	}
 
 	private Peca fazerMovimento(Posicao posicaoDeOrigem, Posicao posicaoDeDestino) {
@@ -389,7 +389,7 @@ public class PartidaDeXadrez {
 		colocarNovaPeca('a', 1, new Torre(tabuleiro, Cor.BRANCA));
 		colocarNovaPeca('b', 1, new Cavalo(tabuleiro, Cor.BRANCA));
 		colocarNovaPeca('c', 1, new Bispo(tabuleiro, Cor.BRANCA));
-		colocarNovaPeca('d', 1, new Rainha(tabuleiro, Cor.BRANCA));
+		colocarNovaPeca('d', 1, new Dama(tabuleiro, Cor.BRANCA));
 		colocarNovaPeca('e', 1, new Rei(tabuleiro, Cor.BRANCA, this));
 		colocarNovaPeca('f', 1, new Bispo(tabuleiro, Cor.BRANCA));
 		colocarNovaPeca('g', 1, new Cavalo(tabuleiro, Cor.BRANCA));
@@ -406,7 +406,7 @@ public class PartidaDeXadrez {
 		colocarNovaPeca('a', 8, new Torre(tabuleiro, Cor.PRETA));
 		colocarNovaPeca('b', 8, new Cavalo(tabuleiro, Cor.PRETA));
 		colocarNovaPeca('c', 8, new Bispo(tabuleiro, Cor.PRETA));
-		colocarNovaPeca('d', 8, new Rainha(tabuleiro, Cor.PRETA));
+		colocarNovaPeca('d', 8, new Dama(tabuleiro, Cor.PRETA));
 		colocarNovaPeca('e', 8, new Rei(tabuleiro, Cor.PRETA, this));
 		colocarNovaPeca('f', 8, new Bispo(tabuleiro, Cor.PRETA));
 		colocarNovaPeca('g', 8, new Cavalo(tabuleiro, Cor.PRETA));

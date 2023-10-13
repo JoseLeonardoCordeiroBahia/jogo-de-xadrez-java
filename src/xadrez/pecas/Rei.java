@@ -120,10 +120,10 @@ public class Rei extends PecaDeXadrez {
 
 		return !getTabuleiro().existePecaNaPosicao(posicao) || peca.getCor() != getCor();
 	}
-
+	
 	@Override
 	public String toString() {
-		return "K";
+		return "R";
 	}
 
 }

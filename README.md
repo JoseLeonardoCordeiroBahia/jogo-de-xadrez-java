@@ -405,11 +405,11 @@ public static void limparTela() {
   
   - Polimorfismo
 
-##### Criando a peça da Rainha
+##### Criando a peça da Dama/Rainha
 
 ###### Lista de controle:
 
-- Classe Rainha
+- Classe Dama
 
 - Atualizar PartidaDeXadrez.iniciarPartidaDeXadrezColocandoPecasNoTabuleiro()
 

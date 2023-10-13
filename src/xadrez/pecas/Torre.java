@@ -67,7 +67,7 @@ public class Torre extends PecaDeXadrez {
 
 		return posicoesPossiveis;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "T";

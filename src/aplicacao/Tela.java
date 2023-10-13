@@ -61,9 +61,14 @@ public class Tela {
 		imprimirPecasCapturadas(pecasCapturadas);
 
 		System.out.println();
-
+		
+		System.out.println("Peças:");
+		System.out.println(ANSI_GREEN + "Peão(P), Torre(T), Cavalo(C), Bispo(B), Dama/Rainha(D), Rei(R)" + ANSI_RESET);
+		
+		System.out.println();
+		
 		System.out.println("Turno: " + partidaDeXadrez.getTurno());
-
+		
 		if (!partidaDeXadrez.isXequeMate()) {
 			System.out.println("Aguardando jogador da peça " + partidaDeXadrez.getJogadorAtual().getDescricao());
 

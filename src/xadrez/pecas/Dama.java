@@ -5,9 +5,9 @@ import tabuleiro.Tabuleiro;
 import xadrez.PecaDeXadrez;
 import xadrez.enums.Cor;
 
-public class Rainha extends PecaDeXadrez {
+public class Dama extends PecaDeXadrez {
 
-	public Rainha(Tabuleiro tabuleiro, Cor cor) {
+	public Dama(Tabuleiro tabuleiro, Cor cor) {
 		super(tabuleiro, cor);
 	}
 
@@ -118,7 +118,7 @@ public class Rainha extends PecaDeXadrez {
 
 	@Override
 	public String toString() {
-		return "R";
+		return "D";
 	}
 
 }
