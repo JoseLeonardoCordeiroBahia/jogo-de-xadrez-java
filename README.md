@@ -420,3 +420,13 @@ public static void limparTela() {
   - Herança
   
   - Polimorfismo
+ 
+##### Jogada especial roque
+
+###### Lista de controle:
+
+- Atualizar Rei
+
+- Atualizar PartidaDeXadrez.fazerMovimento()
+
+- Atualizar PartidaDeXadrez.desfazerMovimento()
